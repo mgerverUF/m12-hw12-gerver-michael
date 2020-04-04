@@ -1,7 +1,8 @@
 // Candy array
 const candy = ['Kit Kat','M&Ms','Skittles','Gummy Bears','Milky Way','Snickers','Starburst','Crunch','Twix','Twizzlers'];
 
-var shuffleNum = (i, j, k) => {
+// Function to shuffle elements within the array
+let shuffleNum = (i, j, k) => {
     for (i = candy.length -1; i > 0; i--) {
         j = Math.floor(Math.random() * i)
         k = candy[i]
@@ -13,4 +14,6 @@ var shuffleNum = (i, j, k) => {
 
 // Feeds candy array to shuffleNum function
 shuffleNum(candy);
+
+// Adds functionality to button 
 

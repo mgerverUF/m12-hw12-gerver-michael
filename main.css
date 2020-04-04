@@ -27,3 +27,11 @@ button {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
