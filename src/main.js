@@ -1,3 +1,4 @@
+// Candy array
 const candy = ['Kit Kat','M&Ms','Skittles','Gummy Bears','Milky Way','Snickers','Starburst','Crunch','Twix','Twizzlers'];
 
 var shuffleNum = (i, j, k) => {
@@ -10,5 +11,6 @@ var shuffleNum = (i, j, k) => {
       };
 }; 
 
-// Feeds strings to shuffleNum function
-shuffleNum(['Kit Kat','M&Ms','Skittles','Gummy Bears','Milky Way','Snickers','Starburst','Crunch','Twix','Twizzlers']);
+// Feeds candy array to shuffleNum function
+shuffleNum(candy);
+
