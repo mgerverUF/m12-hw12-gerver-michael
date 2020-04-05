@@ -15,36 +15,36 @@ btn.addEventListener('click', () => {
             k = candy[i]
             candy[i] = candy[j]
             candy[j] = k
-            document.getElementById('result').innerHTML = candy[j];
+            document.getElementById('result').innerHTML = candy[i];
 
-            if (candy[j] == 'Kit Kat') {
+            if (candy[i] == 'Kit Kat') {
                 document.getElementById('candy-image').src = 'images/kitkat.png';
             }
-            else if (candy[j] == 'M&Ms') {
+            else if (candy[i] == 'M&Ms') {
                 document.getElementById('candy-image').src = 'images/m&ms.png';
             } 
-            else if (candy[j] == 'Skittles') {
+            else if (candy[i] == 'Skittles') {
                 document.getElementById('candy-image').src = 'images/skittles.jpg';
             }   
-            else if (candy[j] == 'Gummy Bears') {
+            else if (candy[i] == 'Gummy Bears') {
                 document.getElementById('candy-image').src = 'images/gummybears.jpg';
             }    
-            else if (candy[j] == 'Milky Way') {
+            else if (candy[i] == 'Milky Way') {
                 document.getElementById('candy-image').src = 'images/milkyway.jpg';
             }   
-            else if (candy[j] == 'Snickers') {
+            else if (candy[i] == 'Snickers') {
                 document.getElementById('candy-image').src = 'images/snickers.jpg';
             }  
-            else if (candy[j] == 'Starburst') {
+            else if (candy[i] == 'Starburst') {
                 document.getElementById('candy-image').src = 'images/starburst.png';
             }   
-            else if (candy[j] == 'Crunch') {
+            else if (candy[i] == 'Crunch') {
                 document.getElementById('candy-image').src = 'images/crunch.jpg';
             }   
-            else if (candy[j] == 'Twix') {
+            else if (candy[i] == 'Twix') {
                 document.getElementById('candy-image').src = 'images/twix.jpg';
             }   
-            else if (candy[j] == 'Twizzlers') {
+            else if (candy[i] == 'Twizzlers') {
                 document.getElementById('candy-image').src = 'images/twizzlers.png';
             }                                            
         };
