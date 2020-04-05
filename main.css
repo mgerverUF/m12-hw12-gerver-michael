@@ -27,12 +27,12 @@ button {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
-/*
-.hide {
-    display: none;
+
+.image-container {
+    text-align: center;
 }
 
-.show {
-    display: block;
+img {
+    width: 35%;
+    margin: auto;
 }
-*/
