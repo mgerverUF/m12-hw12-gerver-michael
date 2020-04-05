@@ -6,45 +6,46 @@ const btn = document.getElementById('candy-button');
 btn.addEventListener('click', () => {
 
     // Candy array
-    const candy = ['Kit Kat','M&Ms','Skittles','Gummy Bears','Milky Way','Snickers','Starburst','Crunch','Twix','Twizzlers'];
+    const candy = ['','Kit Kat','M&Ms','Skittles','Gummy Bears','Milky Way','Snickers','Starburst','Crunch','Twix','Twizzlers'];
 
     // Function to shuffle elements within the array
     let shuffleNum = (i, j, k) => {
-        for (i = candy.length -1; i > 0; i--) {
+        for (i = candy.length - 1; i > 0; i--) {
             j = Math.floor(Math.random() * i)
             k = candy[i]
             candy[i] = candy[j]
             candy[j] = k
-            document.getElementById('result').innerHTML = candy[i];
+            document.getElementById('result').innerHTML = candy[0];
 
-            if (candy[i] == 'Kit Kat') {
+    // Show images with each randomly generated candy
+            if (candy[0] == 'Kit Kat') {
                 document.getElementById('candy-image').src = 'images/kitkat.png';
             }
-            else if (candy[i] == 'M&Ms') {
+            else if (candy[0] == 'M&Ms') {
                 document.getElementById('candy-image').src = 'images/m&ms.png';
             } 
-            else if (candy[i] == 'Skittles') {
+            else if (candy[0] == 'Skittles') {
                 document.getElementById('candy-image').src = 'images/skittles.jpg';
             }   
-            else if (candy[i] == 'Gummy Bears') {
+            else if (candy[0] == 'Gummy Bears') {
                 document.getElementById('candy-image').src = 'images/gummybears.jpg';
             }    
-            else if (candy[i] == 'Milky Way') {
+            else if (candy[0] == 'Milky Way') {
                 document.getElementById('candy-image').src = 'images/milkyway.jpg';
             }   
-            else if (candy[i] == 'Snickers') {
+            else if (candy[0] == 'Snickers') {
                 document.getElementById('candy-image').src = 'images/snickers.jpg';
             }  
-            else if (candy[i] == 'Starburst') {
+            else if (candy[0] == 'Starburst') {
                 document.getElementById('candy-image').src = 'images/starburst.png';
             }   
-            else if (candy[i] == 'Crunch') {
+            else if (candy[0] == 'Crunch') {
                 document.getElementById('candy-image').src = 'images/crunch.jpg';
             }   
-            else if (candy[i] == 'Twix') {
+            else if (candy[0] == 'Twix') {
                 document.getElementById('candy-image').src = 'images/twix.jpg';
             }   
-            else if (candy[i] == 'Twizzlers') {
+            else if (candy[0] == 'Twizzlers') {
                 document.getElementById('candy-image').src = 'images/twizzlers.png';
             }                                            
         };
